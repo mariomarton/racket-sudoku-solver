@@ -1,13 +1,18 @@
 
+
+
+
+
+
 # racket-sudoku-solver
 
-This Racket program solves any legal Sudoku puzzle with any number of pre-filled cells. It supports boards of any size that follow the formula:
+This Racket program solves any legal sudoku puzzle with any number of pre-filled cells. It supports boards of any size that follow the formula:
 
-$$ n^2 \quad \times \quad n^2 \quad \mid \quad n \geq 1 $$
+$$ n^2 \times n^2 \mid n \geq 1 $$
 
-For example, a standard 9x9 Sudoku board corresponds to $n = 3$.
+For example, a standard 9x9 sudoku board corresponds to $n = 3$.
 
-The program does not use constraint solvers or Racket mutations such as the `set!` operator. It also verifies that the input puzzle adheres to Sudoku rules.
+The program does not use constraint solvers or Racket mutations such as the `set!` form. It also verifies that the input puzzle adheres to sudoku rules.
 
 ## Manual
 
@@ -30,7 +35,7 @@ This solver comes with a built-in demo that solves the 9 provided example puzzle
 -   Open **`puzzles.rkt`**.
 -   Use `0` to represent empty cells.
 -   All cell values must be in _decimal format_, even for larger puzzles like Hexadoku.
--   Insert your Sudoku puzzle in the following format:
+-   Insert your sudoku puzzle in the following format:
 
 ```racket
 (define userSudoku '(
@@ -60,4 +65,4 @@ This solver comes with a built-in demo that solves the 9 provided example puzzle
     
 -   If a solution exists, it will be printed to the standard output.
 
-Now you're ready to solve Sudoku puzzles of any size using Racket!
+Now you're ready to solve sudoku puzzles of any size using Racket!
