@@ -56,7 +56,7 @@ This solver comes with a built-in demo that solves the 9 provided example puzzle
 
 #### 2. Run the Solver
 
--   While running **`run.rkt`**, use the `solve` function to solve your puzzle:
+-   Inside **`run.rkt`**, use the `solve` function to solve your puzzle:
     
     ```racket
     (solve userSudoku)
@@ -64,5 +64,6 @@ This solver comes with a built-in demo that solves the 9 provided example puzzle
     ```
     
 -   If a solution exists, it will be printed to the standard output.
+-	An example of running a user-defined puzzle can be found at the end of the **`run.rkt`** file.
 
 Now you're ready to solve sudoku puzzles of any size using Racket!
